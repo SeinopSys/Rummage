@@ -2,6 +2,10 @@
   "changeLanguage": "Nyelv változtatás",
   "current": "Jelenlegi",
   "description": "Fejleszd az orosz szókincsed",
+  "builtWith": {
+    "t1": " és a ",
+    "t2": " felhasználásával készült"
+  },
   "openSource": "Ez a weboldal nyílt forráskódú szoftver",
   "viewSource": "Forráskód megtekintése"
 }

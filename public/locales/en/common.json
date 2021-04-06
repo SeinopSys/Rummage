@@ -2,6 +2,10 @@
   "changeLanguage": "Change language",
   "current": "Current",
   "description": "Improve your Russian vocabulary",
+  "builtWith": {
+    "t1": " built using ",
+    "t2": " "
+  },
   "openSource": "This website is open-source software",
   "viewSource": "View source code"
 }

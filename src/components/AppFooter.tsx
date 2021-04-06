@@ -18,9 +18,12 @@ export const AppFooter: VFC = () => {
       <span className={styles.item}>
         <FontAwesomeIcon icon={['fab', 'osi']} className="mr-2" />
         {t('common:openSource')}
-        <ExternalLink ref={viewSourceRef} href="https://github.com/SeinopSys/Rummage" className="ml-2">
+        <ExternalLink ref={viewSourceRef} href="https://github.com/SeinopSys/Rummage" className="mx-2">
           <FontAwesomeIcon icon={['fab', 'github']} />
         </ExternalLink>
+        {t('common:builtWith.t1')}
+        <ExternalLink href="https://fontawesome.com/license/free">Font Awesome Free</ExternalLink>
+        {t('common:builtWith.t2')}
         <UncontrolledTooltip target={viewSourceRef} fade={false}>
           {t('common:viewSource')}
         </UncontrolledTooltip>
