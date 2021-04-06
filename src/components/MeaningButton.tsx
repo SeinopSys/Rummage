@@ -16,7 +16,7 @@ export const MeaningButton: VFC<PropTypes> = ({ t: tr, meaningKey, onGuess, nth 
   // Words can have multiple meanings, join them if that's the case
   const meaningText = Array.isArray(meaningValue) ? meaningValue.join(', ') : meaningValue;
   return (
-    <Button className="mx-1" onClick={handleClick}>
+    <Button className="m-1" onClick={handleClick}>
       <Badge color="light" className="mr-2">
         {nth}
       </Badge>

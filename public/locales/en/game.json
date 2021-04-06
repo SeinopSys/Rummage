@@ -2,8 +2,8 @@
   "whatsTheMeaning": "What does this word mean?",
   "startGame": "Start game",
   "answerViaKeyboard": "You can also answer using the number keys on your keyboard",
-  "correctGuess": "<0>{{count}}</0> correct guess in a row",
-  "correctGuess_plural": "<0>{{count}}</0> correct guesses in a row",
+  "correctGuess": "<0>{{count}}</0> correct answer in a row",
+  "correctGuess_plural": "<0>{{count}}</0> correct answers in a row",
   "nativeCursive": "Display Russian words in cursive",
   "showStress": "Indicate stress with <1>´<1>"
 }

@@ -1,6 +1,6 @@
 import { Category, Gender, Word } from 'src/types/word';
 
-export const lesson01Part01Words: Word[] = [
+export const lesson00Part01Words: Word[] = [
   {
     native: 'торт',
     key: 'tort',
@@ -221,12 +221,6 @@ export const lesson01Part01Words: Word[] = [
     native: 'да',
     key: 'da',
     gender: Gender.FEMININE,
-    categories: [Category.BOOLEAN],
-  },
-  {
-    native: 'нет',
-    key: 'nyet',
-    gender: Gender.MASCULINE,
     categories: [Category.BOOLEAN],
   },
   {

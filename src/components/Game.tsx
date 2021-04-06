@@ -93,7 +93,7 @@ export const Game: VFC = () => {
             </p>
             {allMeanings.length > 0 && (
               <>
-                <div className="d-flex justify-content-center align-items-center">
+                <div className="d-flex justify-content-center align-items-center flex-wrap">
                   {allMeanings.map((meaningKey, i) => (
                     <MeaningButton key={meaningKey} t={t} meaningKey={meaningKey} onGuess={handleGuess} nth={i + 1} />
                   ))}
@@ -108,8 +108,8 @@ export const Game: VFC = () => {
         )}
       </CardBody>
       <CardFooter>
-        <Row className="justify-content-between align-items-center">
-          <Col xs="auto" className="h4 mb-0">
+        <Row className="justify-content-center justify-content-lg-between align-items-center">
+          <Col xs="auto" className="h4 my-2">
             <Trans t={t} i18nKey="game:correctGuess" count={streak}>
               <b>0</b>1
             </Trans>
