@@ -1,0 +1,6 @@
+{
+  "whatsTheMeaning": "What does this word mean?",
+  "startGame": "Start game",
+  "correctGuess": "<0>{{count}}</0> correct guess in a row",
+  "correctGuess_plural": "<0>{{count}}</0> correct guesses in a row"
+}

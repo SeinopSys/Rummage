@@ -1,0 +1,19 @@
+@import '../vars';
+
+.title {
+  $gradient-stop-1: 48%;
+  $gradient-stop-2: 68%;
+  background: linear-gradient(
+    to bottom,
+    $russian-white $gradient-stop-1,
+    $russian-blue $gradient-stop-1,
+    $russian-blue $gradient-stop-2,
+    $russian-red $gradient-stop-2
+  );
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 3rem;
+}
