@@ -30,7 +30,8 @@
     "react-redux": "^7.2.3",
     "reactstrap": "^8.9.0",
     "redux": "^4.0.5",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "use-persisted-state": "^0.3.3"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.11",
@@ -38,6 +39,7 @@
     "@types/node": "^12.12.21",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
+    "@types/use-persisted-state": "^0.3.0",
     "@typescript-eslint/eslint-plugin": "^4.7.0",
     "@typescript-eslint/parser": "^4.7.0",
     "eslint": "^7.13.0",

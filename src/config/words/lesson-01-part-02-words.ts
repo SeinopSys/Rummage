@@ -1,0 +1,120 @@
+import { Category, Gender, Word } from 'src/types/word';
+
+export const lesson01Part02Words: Word[] = [
+  {
+    native: 'лифт',
+    key: 'lift',
+    gender: Gender.MASCULINE,
+    categories: [Category.OBJECTS, Category.LOCATIONS],
+  },
+  {
+    native: 'мир',
+    key: 'mir',
+    gender: Gender.MASCULINE,
+    categories: [Category.RELATIONS],
+  },
+  {
+    native: 'Иртыш',
+    stressIndex: 3,
+    key: 'Irtysh',
+    gender: Gender.MASCULINE,
+    categories: [Category.GEOGRAPHICAL_NAMES, Category.RIVERS],
+  },
+  {
+    native: 'Нил',
+    key: 'Nil',
+    gender: Gender.MASCULINE,
+    categories: [Category.GEOGRAPHICAL_NAMES, Category.RIVERS],
+  },
+  {
+    native: 'вино',
+    stressIndex: 3,
+    key: 'vino',
+    gender: Gender.NEUTER,
+    categories: [Category.ALCOHOLIC_DRINKS, Category.BEVERAGES],
+  },
+  {
+    native: 'кино',
+    stressIndex: 3,
+    key: 'kino',
+    gender: Gender.NEUTER,
+    categories: [Category.LOCATIONS, Category.ENTERTAINMENT],
+  },
+  {
+    native: 'ритм',
+    key: 'ritm',
+    gender: Gender.MASCULINE,
+    categories: [Category.MUSIC],
+  },
+  {
+    native: 'диск',
+    key: 'disk',
+    gender: Gender.MASCULINE,
+    categories: [Category.OBJECTS],
+  },
+  {
+    native: 'риск',
+    key: 'risk',
+    gender: Gender.MASCULINE,
+    categories: [Category.CONCEPTS],
+  },
+  {
+    native: 'артист',
+    stressIndex: 3,
+    key: 'artist',
+    gender: Gender.MASCULINE,
+    categories: [Category.PROFESSION],
+  },
+  {
+    native: 'Минск',
+    key: 'Minsk',
+    gender: Gender.MASCULINE,
+    categories: [Category.GEOGRAPHICAL_NAMES, Category.CITIES],
+  },
+  {
+    native: 'три',
+    key: 'tri',
+    gender: Gender.MASCULINE,
+    categories: [Category.NUMBERS],
+  },
+  {
+    native: 'тик-так',
+    key: 'tik-tak',
+    gender: Gender.MASCULINE,
+    categories: [Category.ONOMATOPOEIC_WORD, Category.TIME],
+  },
+  {
+    native: 'лимон',
+    stressIndex: 3,
+    key: 'limon',
+    gender: Gender.MASCULINE,
+    categories: [Category.FOOD, Category.FRUITS],
+  },
+  {
+    native: 'спутник',
+    stressIndex: 2,
+    key: 'sputnik',
+    gender: Gender.MASCULINE,
+    categories: [Category.OUTER_SPACE],
+  },
+  {
+    native: 'Рим',
+    key: 'Rim',
+    gender: Gender.MASCULINE,
+    categories: [Category.GEOGRAPHICAL_NAMES, Category.CITIES],
+  },
+  {
+    native: 'пилот',
+    stressIndex: 3,
+    key: 'pilot',
+    gender: Gender.MASCULINE,
+    categories: [Category.PROFESSION, Category.AIR_TRAVEL],
+  },
+  {
+    native: 'литр',
+    key: 'litr',
+    gender: Gender.MASCULINE,
+    categories: [Category.UNITS_OF_MEASUREMENT],
+  },
+  // TODO Continue
+];

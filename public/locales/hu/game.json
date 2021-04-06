@@ -1,5 +1,8 @@
 {
   "whatsTheMeaning": "Mit jelent ez a szó?",
   "startGame": "Játék indítása",
-  "correctGuess": "<0>{{count}}</0> egymást követő helyes találat"
+  "correctGuess": "<0>{{count}}</0> egymást követő helyes találat",
+  "answerViaKeyboard": "A billentyűzeted szám billentyűinek használatával is válaszolhatsz",
+  "nativeCursive": "Az orosz szó kézírással jelenjen meg",
+  "showStress": "Hangsúly jelölése <1>´</1> jellel"
 }
