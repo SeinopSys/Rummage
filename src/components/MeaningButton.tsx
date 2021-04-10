@@ -10,7 +10,7 @@ interface PropTypes {
 }
 
 export const MeaningButton: VFC<PropTypes> = ({ t: tr, meaningKey, onGuess, nth }) => {
-  const handleClick = useCallback(() => void onGuess(meaningKey), [meaningKey, onGuess]);
+  const handleClick = useCallback(() => onGuess(meaningKey), [meaningKey, onGuess]);
   // Not having `t` here avoids a warning from the i18n Support IntelliJ IDEA Plug-in
   const meaningValue = tr(`words:${meaningKey}`);
   // Words can have multiple meanings, join them if that's the case
