@@ -1,72 +1,11 @@
-export enum Gender {
-  MASCULINE = '♂',
-  FEMININE = '♀',
-  NEUTER = '~',
-}
+import { Category } from 'src/types/category';
+import { Gender } from 'src/types/gender';
+import { PersonalPronoun } from 'src/types/personal-pronoun';
+import { Tense } from 'src/types/tense';
 
-export enum Category {
-  ACRONYM,
-  AIR_TRAVEL,
-  ALCOHOLIC_DRINKS,
-  ANIMALS,
-  BEVERAGES,
-  NATURE,
-  BODY_PARTS,
-  BOOLEAN,
-  BUILDINGS,
-  CITIES,
-  CUTLERY,
-  COLORS,
-  COMMUNICATION,
-  COMPARATIVE_WORD,
-  CONCEPTS,
-  CONJUNCTIVE_WORD,
-  DAILY_ROUTINE,
-  DAIRY_PRODUCTS,
-  DECLARATIVE_WORD,
-  ENTERTAINMENT,
-  EXISTENCE,
-  FAMILY,
-  FINANCIAL,
-  FOOD,
-  FORMAL,
-  FRUITS,
-  FURNITURE,
-  GEOGRAPHICAL_NAMES,
-  GOVERNMENT_OFFICIAL,
-  GREETINGS,
-  HEALTH,
-  INFORMAL,
-  JUSTICE,
-  LOCATIONS,
-  MATERIALS,
-  METALS,
-  MUSIC,
-  NUMBERS,
-  OBJECTS,
-  ONOMATOPOEIC_WORD,
-  OUTER_SPACE,
-  PERSONAL_NAMES,
-  PERSONAL_PRONOUN,
-  PLANTS,
-  PLURAL,
-  PROFESSION,
-  RELATIONS,
-  RIVERS,
-  QUESTION_WORD,
-  SPORTS,
-  STUDYING,
-  SWEETS,
-  TIME,
-  TRANSPORTATION,
-  UNITS_OF_MEASUREMENT,
-  WEATHER,
-  WRITING,
-}
-
-export interface Word {
+interface WordCommon {
   /**
-   * The word spelled out using russian characters
+   * The word spelled out using russian characters, used as a key for translations
    */
   native: string;
   /**
@@ -75,15 +14,26 @@ export interface Word {
    */
   stressIndex?: number;
   /**
-   * They key from locales/<lang>/words.json; used to display the meaning(s) for this word
-   *
-   * May resolve to an array of different meanings which is handled on the frontend
+   * Semantic categories the word fits under, may be used for filtering in the future
    */
-  key: string;
-  gender: Gender;
   categories: Category[];
   /**
-   * `true` indicates swear words
+   * `true` indicates swear words, optional since `false` is assumed by default
    */
   nonNormative?: boolean;
 }
+
+interface Noun extends WordCommon {
+  gender?: Gender;
+}
+
+interface Verb extends WordCommon {
+  /**
+   * A single verb may belong to multiple genders, if missing assume it's the same for all genders
+   */
+  gender?: Gender[];
+  tense: Tense;
+  personalPronoun: PersonalPronoun;
+}
+
+export type Word = Noun | Verb;

@@ -1,6 +1,6 @@
 import { AppFooter } from 'components/AppFooter';
 import { AppTitle } from 'components/AppTitle';
-import { Game } from 'components/Game';
+import { WordMeaningGame } from 'components/games/WordMeaningGame';
 import Layout from 'components/Layout';
 import { GetStaticProps } from 'next';
 import { SSRConfig } from 'next-i18next';
@@ -10,9 +10,9 @@ import { Col, Row } from 'reactstrap';
 const IndexPage = () => (
   <Layout>
     <Row className="justify-content-center">
-      <Col className="py-5">
+      <Col xl={10} className="py-5">
         <AppTitle />
-        <Game />
+        <WordMeaningGame />
         <AppFooter />
       </Col>
     </Row>

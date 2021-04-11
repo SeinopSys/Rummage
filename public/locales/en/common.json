@@ -2,10 +2,9 @@
   "changeLanguage": "Change language",
   "current": "Current",
   "description": "Improve your Russian vocabulary",
-  "builtWith": {
-    "t1": " built using ",
-    "t2": " "
-  },
-  "openSource": "This website is open-source software",
-  "viewSource": "View source code"
+  "openSource": "This website is <1>open-source software</1> built using <3>Font Awesome Free</3>",
+  "viewSource": "View source code",
+  "wordCount": "{{count}} word",
+  "wordCount_plural": "{{count}} words",
+  "showGender": "game:showGender"
 }

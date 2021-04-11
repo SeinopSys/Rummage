@@ -2,13 +2,36 @@
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 
+.word {
+  position: relative;
+  display: flex;
+  min-height: 2em;
+  align-items: center;
+  justify-content: center;
+}
+
 .stress-mark {
   speak: never;
   font-family: $font-family-monospace;
   color: $code-color;
   user-select: none;
+  position: relative;
+  top: -0.1em;
+
+  &.capital {
+    top: -0.2em;
+  }
 }
 
 .text-cursive {
   font-family: $font-family-cursive !important;
+
+  .stress-mark {
+    font-size: 0.75em;
+
+    &.capital {
+      top: -0.5em;
+      left: 0.25em;
+    }
+  }
 }

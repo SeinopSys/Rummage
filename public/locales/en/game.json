@@ -1,9 +1,14 @@
 {
   "whatsTheMeaning": "What does this word mean?",
+  "howToPlay": "Each round you are presented with a Russian word and a set of four options, only one of which is the correct meaning for the word shown. Select the correct word to move on to the next word. If you get a word wrong, it's game over and you have to start from scratch. The game lasts until the entire database ({{wordCount}}) is exhausted.",
   "startGame": "Start game",
+  "startOver": "Start over",
   "answerViaKeyboard": "You can also answer using the number keys on your keyboard",
   "correctGuess": "<0>{{count}}</0> correct answer in a row",
   "correctGuess_plural": "<0>{{count}}</0> correct answers in a row",
-  "nativeCursive": "Display Russian words in cursive",
-  "showStress": "Indicate stress with <1>´<1>"
+  "nativeCursive": "Display Russian word in cursive",
+  "showStress": "Indicate stress with <1>red<1>",
+  "showGender": "Show genders of words",
+  "youWon": "You identified all words correctly!",
+  "youLost": "There's still room for improvement in your vocabulary. Try again?"
 }

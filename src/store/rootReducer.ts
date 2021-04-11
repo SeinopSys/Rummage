@@ -1,10 +1,11 @@
 import { combineReducers } from '@reduxjs/toolkit';
-import gameReducer, { GameState } from 'src/store/slices/gameSlice';
+import { wordMeaningReducer } from 'src/store/slices/word-meaning-slice';
+import { WordMeaningState } from 'src/store/state/word-meaning-state';
 
 export interface RootState {
-  game: GameState;
+  wordMeaning: WordMeaningState;
 }
 
 export const rootReducer = combineReducers<RootState>({
-  game: gameReducer,
+  wordMeaning: wordMeaningReducer,
 });

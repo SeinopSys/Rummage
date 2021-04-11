@@ -1,0 +1,15 @@
+@import '../vars';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+.text-feminine {
+  color: $pink;
+}
+
+.text-masculine {
+  color: $blue;
+}
+
+.text-neuter {
+  color: $green;
+}

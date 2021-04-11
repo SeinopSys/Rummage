@@ -1,8 +1,13 @@
 {
   "whatsTheMeaning": "Mit jelent ez a szó?",
+  "howToPlay": "Minden körben látni fogsz egy orosz szót alatta négy válaszlehetőséggel, melyek közül csak egy a helyes jelentés az aktuális szóhoz. Válaszd ki a helyes jelentést hogy a következő szóhoz juthass. Ha egyet tévesztesz, vége a játéknak, és újra kell kezdened az elejétől. A játék addig tart, amíg a teljes adatbázis ({{wordCount}}) végére nem érsz.",
   "startGame": "Játék indítása",
+  "startOver": "Újrakezdés",
   "correctGuess": "<0>{{count}}</0> egymást követő helyes válasz",
   "answerViaKeyboard": "A billentyűzeted szám billentyűinek használatával is válaszolhatsz",
   "nativeCursive": "Az orosz szó kézírással jelenjen meg",
-  "showStress": "Hangsúly jelölése <1>´</1> jellel"
+  "showStress": "Hangsúly jelölése <1>pirossal</1>",
+  "showGender": "Szavak nemének jelölése",
+  "youWon": "Az összes szót sikeresen eltaláltad!",
+  "youLost": "Még van hova fejleszteni a szókincsed. Újra próbálkozol?"
 }
