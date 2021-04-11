@@ -16,7 +16,7 @@ interface WordCommon {
   /**
    * Semantic categories the word fits under, may be used for filtering in the future
    */
-  categories: Category[];
+  categories?: Category[];
   /**
    * `true` indicates swear words, optional since `false` is assumed by default
    */
@@ -25,6 +25,7 @@ interface WordCommon {
 
 interface Noun extends WordCommon {
   gender?: Gender;
+  plural?: boolean;
 }
 
 interface Verb extends WordCommon {

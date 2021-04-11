@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { MeaningButton } from 'components/MeaningButton';
 import { Preferences } from 'components/Preferences';
 import { WordWithStress } from 'components/WordWithStress';
-import { shuffle } from 'lodash';
+import { shuffle, intersection } from 'lodash';
 import { Trans, useTranslation } from 'next-i18next';
 import { useCallback, useEffect, useMemo, useState, VFC } from 'react';
 import { batch, useDispatch, useSelector } from 'react-redux';
@@ -15,6 +15,7 @@ import { RootState } from 'src/store/rootReducer';
 import { wordMeaningActions } from 'src/store/slices';
 import { GameState } from 'src/types/game-state';
 import { Word } from 'src/types/word';
+import { normalizeMeanings } from 'src/utils/normalize-meanings';
 
 export const WordMeaningGame: VFC = () => {
   const { t } = useTranslation();
@@ -43,14 +44,24 @@ export const WordMeaningGame: VFC = () => {
         setLastSelectedMeaning(meaningKey);
 
         if (meaningKey !== word.native) {
-          dispatch(wordMeaningActions.endGame());
-          return;
+          /**
+           * Maybe the word simply has identical meaning in the current site language, let's make
+           * sure the user isn't punished for what could be a perfectly correct answer based
+           * on the text displayed
+           */
+          const chosenMeaning = normalizeMeanings(t(`words:${meaningKey}`));
+          const correctMeaning = normalizeMeanings(t(`words:${word.native}`));
+          const match = intersection(chosenMeaning, correctMeaning).length > 0;
+          if (!match) {
+            dispatch(wordMeaningActions.endGame());
+            return;
+          }
         }
 
         dispatch(wordMeaningActions.advanceWord());
       });
     },
-    [dispatch, word],
+    [dispatch, t, word],
   );
 
   useEffect(() => {

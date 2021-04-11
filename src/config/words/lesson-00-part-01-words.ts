@@ -4,6 +4,11 @@ import { Word } from 'src/types/word';
 
 export const lesson00Part01Words: Word[] = [
   {
+    native: 'дом',
+    gender: Gender.MASCULINE,
+    categories: [Category.BUILDINGS],
+  },
+  {
     native: 'торт',
     gender: Gender.MASCULINE,
     categories: [Category.OBJECTS, Category.FOOD, Category.SWEETS],
@@ -105,7 +110,6 @@ export const lesson00Part01Words: Word[] = [
   },
   {
     native: 'два',
-    gender: Gender.FEMININE,
     categories: [Category.NUMBERS],
   },
   {

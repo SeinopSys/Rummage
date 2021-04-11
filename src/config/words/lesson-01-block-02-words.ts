@@ -34,18 +34,6 @@ export const lesson01Block02Words: Word[] = [
     categories: [Category.HEALTH],
   },
   {
-    native: 'молоко',
-    stressIndex: 5,
-    gender: Gender.NEUTER,
-    categories: [Category.BEVERAGES],
-  },
-  {
-    native: 'слово',
-    stressIndex: 2,
-    gender: Gender.NEUTER,
-    categories: [Category.WRITING],
-  },
-  {
     native: 'письмо',
     stressIndex: 5,
     gender: Gender.NEUTER,
@@ -68,12 +56,6 @@ export const lesson01Block02Words: Word[] = [
     stressIndex: 9,
     gender: Gender.MASCULINE,
     categories: [Category.STUDYING, Category.LOCATIONS],
-  },
-  {
-    native: 'магазин',
-    stressIndex: 5,
-    gender: Gender.MASCULINE,
-    categories: [Category.LOCATIONS],
   },
   {
     native: 'словарь',

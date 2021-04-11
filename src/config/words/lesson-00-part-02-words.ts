@@ -64,7 +64,6 @@ export const lesson00Part02Words: Word[] = [
   },
   {
     native: 'три',
-    gender: Gender.MASCULINE,
     categories: [Category.NUMBERS],
   },
   {

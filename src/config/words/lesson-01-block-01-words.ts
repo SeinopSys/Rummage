@@ -51,12 +51,6 @@ export const lesson01Block01Words: Word[] = [
     categories: [Category.FAMILY],
   },
   {
-    native: 'сестра',
-    stressIndex: 5,
-    gender: Gender.FEMININE,
-    categories: [Category.FAMILY],
-  },
-  {
     native: 'дочь',
     gender: Gender.FEMININE,
     categories: [Category.FAMILY],
@@ -92,6 +86,7 @@ export const lesson01Block01Words: Word[] = [
     native: 'дети',
     stressIndex: 1,
     gender: Gender.MASCULINE,
+    plural: true,
     categories: [Category.FAMILY, Category.PLURAL],
   },
   {
@@ -104,6 +99,7 @@ export const lesson01Block01Words: Word[] = [
     native: 'родители',
     stressIndex: 3,
     gender: Gender.MASCULINE,
+    plural: true,
     categories: [Category.FAMILY, Category.PLURAL],
   },
   {
@@ -116,6 +112,7 @@ export const lesson01Block01Words: Word[] = [
     native: 'сынок',
     stressIndex: 3,
     gender: Gender.MASCULINE,
+    plural: true,
     categories: [Category.FAMILY],
   },
 ];

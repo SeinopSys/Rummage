@@ -84,4 +84,60 @@ export const lesson00Part03Words: Word[] = [
     gender: Gender.MASCULINE,
     categories: [Category.GEOGRAPHICAL_NAMES, Category.POLITICS, Category.ACRONYMS],
   },
+  {
+    native: 'мне',
+    gender: Gender.MASCULINE,
+    categories: [Category.PERSONAL_PRONOUN],
+  },
+  {
+    native: 'шесть',
+    categories: [Category.NUMBERS],
+  },
+  {
+    native: 'шест',
+    gender: Gender.MASCULINE,
+    categories: [Category.NUMBERS],
+  },
+  {
+    native: 'есть',
+    categories: [Category.EXISTENCE],
+  },
+  {
+    native: 'ель',
+    gender: Gender.FEMININE,
+    categories: [Category.NATURE, Category.PLANTS],
+  },
+  {
+    native: 'соль',
+    gender: Gender.FEMININE,
+    categories: [Category.FOOD, Category.SPICES],
+  },
+  {
+    native: 'семь',
+    categories: [Category.NUMBERS],
+  },
+  {
+    native: 'здесь',
+    categories: [Category.DECLARATIVE_WORD],
+  },
+  {
+    native: 'день',
+    gender: Gender.MASCULINE,
+    categories: [Category.TIME],
+  },
+  {
+    native: 'царь',
+    gender: Gender.MASCULINE,
+    categories: [Category.POLITICS, Category.GOVERNMENT_OFFICIAL],
+  },
+  {
+    native: 'шаль',
+    gender: Gender.FEMININE,
+    categories: [Category.CLOTHES],
+  },
+  {
+    native: 'Сибирь',
+    stressIndex: 3,
+    categories: [Category.GEOGRAPHICAL_NAMES],
+  },
 ];
