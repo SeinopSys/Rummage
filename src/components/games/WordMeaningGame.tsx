@@ -97,7 +97,7 @@ export const WordMeaningGame: VFC = () => {
         )}
         {state !== GameState.INITIAL && word && (
           <>
-            <p className="display-4 font-weight-bold text-center">
+            <p className="display-4 font-weight-bold text-center" lang="ru">
               <WordWithStress
                 {...word}
                 cursive={preferences.cursive}

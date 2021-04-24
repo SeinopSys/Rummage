@@ -56,6 +56,8 @@ export const lesson00Part04Words: Word[] = [
   },
   {
     native: 'съел',
+    tense: Tense.PAST,
+    personalPronoun: PersonalPronoun.THIRD_PERSON_SINGULAR,
   },
   {
     native: 'пьёт',
