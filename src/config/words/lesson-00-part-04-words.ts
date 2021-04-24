@@ -1,3 +1,4 @@
+import { WORD_FIVE } from 'src/config/words/numbers-1-to-10';
 import { Category } from 'src/types/category';
 import { Gender } from 'src/types/gender';
 import { PersonalPronoun } from 'src/types/personal-pronoun';
@@ -16,10 +17,7 @@ export const lesson00Part04Words: Word[] = [
   {
     native: 'плюш',
   },
-  {
-    native: 'пять',
-    categories: [Category.NUMBERS],
-  },
+  WORD_FIVE,
   {
     native: 'люблю',
     stressIndex: 4,

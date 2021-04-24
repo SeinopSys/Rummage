@@ -7,6 +7,7 @@ import { lesson00Part05Words } from 'src/config/words/lesson-00-part-05-words';
 import { lesson00Part06Words } from 'src/config/words/lesson-00-part-06-words';
 import { lesson01Block01Words } from 'src/config/words/lesson-01-block-01-words';
 import { lesson01Block02Words } from 'src/config/words/lesson-01-block-02-words';
+import { numbers11To20 } from 'src/config/words/numbers-11-to-20';
 
 export const lesson00WordsArray = [
   ...lesson00Part01Words,
@@ -17,4 +18,4 @@ export const lesson00WordsArray = [
   ...lesson00Part06Words,
 ];
 export const lesson01WordsArray = [...lesson01Block01Words, ...lesson01Block02Words];
-export const allWordsArray = [...lesson00WordsArray, ...lesson01WordsArray, ...extraWords];
+export const allWordsArray = [...lesson00WordsArray, ...lesson01WordsArray, ...extraWords, ...numbers11To20];

@@ -1,3 +1,4 @@
+import { WORD_SEVEN, WORD_SIX } from 'src/config/words/numbers-1-to-10';
 import { Category } from 'src/types/category';
 import { Gender } from 'src/types/gender';
 import { PersonalPronoun } from 'src/types/personal-pronoun';
@@ -89,14 +90,11 @@ export const lesson00Part03Words: Word[] = [
     gender: Gender.MASCULINE,
     categories: [Category.PERSONAL_PRONOUN],
   },
-  {
-    native: 'шесть',
-    categories: [Category.NUMBERS],
-  },
+  WORD_SIX,
   {
     native: 'шест',
     gender: Gender.MASCULINE,
-    categories: [Category.NUMBERS],
+    categories: [Category.OBJECTS],
   },
   {
     native: 'есть',
@@ -112,10 +110,7 @@ export const lesson00Part03Words: Word[] = [
     gender: Gender.FEMININE,
     categories: [Category.FOOD, Category.SPICES],
   },
-  {
-    native: 'семь',
-    categories: [Category.NUMBERS],
-  },
+  WORD_SEVEN,
   {
     native: 'здесь',
     categories: [Category.DECLARATIVE_WORD],

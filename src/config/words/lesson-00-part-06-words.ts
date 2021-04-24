@@ -1,18 +1,11 @@
+import { WORD_FOUR, WORD_ONE } from 'src/config/words/numbers-1-to-10';
 import { Category } from 'src/types/category';
 import { Gender } from 'src/types/gender';
 import { Word } from 'src/types/word';
 
 export const lesson00Part06Words: Word[] = [
-  {
-    native: 'один',
-    stressIndex: 2,
-    categories: [Category.NUMBERS],
-  },
-  {
-    native: 'четыре',
-    stressIndex: 3,
-    categories: [Category.NUMBERS],
-  },
+  WORD_ONE,
+  WORD_FOUR,
   {
     native: 'сено',
     stressIndex: 1,

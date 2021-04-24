@@ -1,3 +1,4 @@
+import { WORD_THREE } from 'src/config/words/numbers-1-to-10';
 import { Category } from 'src/types/category';
 import { Gender } from 'src/types/gender';
 import { Word } from 'src/types/word';
@@ -62,10 +63,7 @@ export const lesson00Part02Words: Word[] = [
     gender: Gender.MASCULINE,
     categories: [Category.GEOGRAPHICAL_NAMES, Category.CITIES],
   },
-  {
-    native: 'три',
-    categories: [Category.NUMBERS],
-  },
+  WORD_THREE,
   {
     native: 'тик-так',
     gender: Gender.MASCULINE,

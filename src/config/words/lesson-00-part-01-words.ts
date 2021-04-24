@@ -1,3 +1,4 @@
+import { WORD_TWO } from 'src/config/words/numbers-1-to-10';
 import { Category } from 'src/types/category';
 import { Gender } from 'src/types/gender';
 import { Word } from 'src/types/word';
@@ -108,10 +109,7 @@ export const lesson00Part01Words: Word[] = [
     gender: Gender.MASCULINE,
     categories: [Category.PERSONAL_PRONOUN],
   },
-  {
-    native: 'два',
-    categories: [Category.NUMBERS],
-  },
+  WORD_TWO,
   {
     native: 'мак',
     gender: Gender.MASCULINE,

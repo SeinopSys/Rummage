@@ -1,3 +1,4 @@
+import { WORD_EIGHT, WORD_NINE, WORD_TEN } from 'src/config/words/numbers-1-to-10';
 import { Category } from 'src/types/category';
 import { Gender } from 'src/types/gender';
 import { Word } from 'src/types/word';
@@ -128,11 +129,7 @@ export const lesson00Part05Words: Word[] = [
     gender: Gender.MASCULINE,
     categories: [Category.NUMBERS],
   },
-  {
-    native: 'восемь',
-    stressIndex: 1,
-    categories: [Category.NUMBERS],
-  },
+  WORD_EIGHT,
   {
     native: 'мастер',
     stressIndex: 1,
@@ -201,14 +198,6 @@ export const lesson00Part05Words: Word[] = [
     gender: Gender.MASCULINE,
     categories: [Category.NATIONALITY],
   },
-  {
-    native: 'девять',
-    stressIndex: 1,
-    categories: [Category.NUMBERS],
-  },
-  {
-    native: 'десять',
-    stressIndex: 1,
-    categories: [Category.NUMBERS],
-  },
+  WORD_NINE,
+  WORD_TEN,
 ];
