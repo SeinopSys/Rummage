@@ -15,6 +15,7 @@ export const lesson00Part03Words: Word[] = [
     native: 'метр',
     gender: Gender.MASCULINE,
     categories: [Category.LOCATIONS, Category.TRANSPORTATION],
+    fixedDecoys: ['метро'],
   },
   {
     native: 'лес',
@@ -31,6 +32,7 @@ export const lesson00Part03Words: Word[] = [
     stressIndex: 2,
     gender: Gender.MASCULINE,
     categories: [Category.JUSTICE],
+    fixedDecoys: ['артист'],
   },
   {
     native: 'привет',
@@ -94,7 +96,6 @@ export const lesson00Part03Words: Word[] = [
   {
     native: 'шест',
     gender: Gender.MASCULINE,
-    categories: [Category.OBJECTS],
   },
   {
     native: 'есть',
@@ -119,6 +120,7 @@ export const lesson00Part03Words: Word[] = [
     native: 'день',
     gender: Gender.MASCULINE,
     categories: [Category.TIME],
+    fixedDecoys: ['Дон'],
   },
   {
     native: 'царь',

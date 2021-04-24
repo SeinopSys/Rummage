@@ -31,7 +31,7 @@ export const lesson00Part04Words: Word[] = [
   {
     native: 'ёлка',
     gender: Gender.FEMININE,
-    categories: [Category.PLANTS],
+    categories: [Category.PLANTS, Category.NATURE],
   },
   {
     native: 'юрта',
@@ -77,6 +77,7 @@ export const lesson00Part04Words: Word[] = [
     native: 'щи',
     gender: Gender.MASCULINE,
     categories: [Category.FOOD],
+    fixedDecoys: ['капуста'],
   },
   {
     native: 'мяч',

@@ -19,7 +19,7 @@ export const lesson01Block02Words: Word[] = [
     native: 'тетрадь',
     stressIndex: 4,
     gender: Gender.FEMININE,
-    categories: [Category.STUDYING],
+    categories: [Category.STUDYING, Category.WRITING],
   },
   {
     native: 'площадь',
@@ -62,6 +62,7 @@ export const lesson01Block02Words: Word[] = [
     stressIndex: 4,
     gender: Gender.MASCULINE,
     categories: [Category.WRITING],
+    fixedDecoys: ['слово'],
   },
   {
     native: 'аэропорт',
@@ -82,7 +83,8 @@ export const lesson01Block02Words: Word[] = [
   {
     native: 'кафе',
     gender: Gender.NEUTER,
-    categories: [Category.LOCATIONS, Category.BEVERAGES],
+    categories: [Category.LOCATIONS],
+    fixedDecoys: ['кофе'],
   },
   {
     native: 'гимназия',

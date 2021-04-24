@@ -14,10 +14,21 @@ export const extraWords: Word[] = [
     stressIndex: 3,
     gender: Gender.FEMININE,
     categories: [Category.ANIMALS],
+    fixedDecoys: ['воробей'],
   },
   {
     native: 'всё',
     gender: Gender.MASCULINE,
     categories: [Category.EXISTENCE],
+  },
+  {
+    native: 'сейчас',
+    categories: [Category.DECLARATIVE_WORD],
+    fixedDecoys: ['мост'],
+  },
+  {
+    native: 'Печ',
+    categories: [Category.GEOGRAPHICAL_NAMES],
+    fixedDecoys: ['печь'],
   },
 ];

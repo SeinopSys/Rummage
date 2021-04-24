@@ -12,7 +12,7 @@ export const lesson00Part01Words: Word[] = [
   {
     native: 'торт',
     gender: Gender.MASCULINE,
-    categories: [Category.OBJECTS, Category.FOOD, Category.SWEETS],
+    categories: [Category.FOOD, Category.SWEETS],
   },
   {
     native: 'порт',
@@ -33,6 +33,7 @@ export const lesson00Part01Words: Word[] = [
     native: 'гол',
     gender: Gender.MASCULINE,
     categories: [Category.OBJECTS, Category.SPORTS],
+    fixedDecoys: ['голубь'],
   },
   {
     native: 'банк',
@@ -78,11 +79,13 @@ export const lesson00Part01Words: Word[] = [
     native: 'стол',
     gender: Gender.MASCULINE,
     categories: [Category.OBJECTS, Category.FURNITURE],
+    fixedDecoys: ['стул'],
   },
   {
     native: 'стул',
     gender: Gender.MASCULINE,
     categories: [Category.OBJECTS, Category.FURNITURE],
+    fixedDecoys: ['стол'],
   },
   {
     native: 'брат',
@@ -103,11 +106,13 @@ export const lesson00Part01Words: Word[] = [
     native: 'Дон',
     gender: Gender.MASCULINE,
     categories: [Category.GEOGRAPHICAL_NAMES, Category.RIVERS],
+    fixedDecoys: ['дом'],
   },
   {
     native: 'он',
     gender: Gender.MASCULINE,
     categories: [Category.PERSONAL_PRONOUN],
+    fixedDecoys: ['она', 'оно'],
   },
   WORD_TWO,
   {
@@ -129,6 +134,7 @@ export const lesson00Part01Words: Word[] = [
     native: 'глобус',
     gender: Gender.MASCULINE,
     categories: [Category.OUTER_SPACE],
+    fixedDecoys: ['голубь'],
   },
   {
     native: 'вот',
@@ -149,16 +155,18 @@ export const lesson00Part01Words: Word[] = [
     native: 'нос',
     gender: Gender.MASCULINE,
     categories: [Category.BODY_PARTS],
+    fixedDecoys: ['нож'],
   },
   {
     native: 'мост',
     gender: Gender.MASCULINE,
     categories: [Category.LOCATIONS, Category.BUILDINGS],
+    fixedDecoys: ['сейчас'],
   },
   {
     native: 'шарф',
     gender: Gender.MASCULINE,
-    categories: [Category.OBJECTS],
+    categories: [Category.CLOTHES],
   },
   {
     native: 'там',

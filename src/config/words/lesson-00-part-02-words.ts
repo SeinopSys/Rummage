@@ -57,6 +57,7 @@ export const lesson00Part02Words: Word[] = [
     stressIndex: 3,
     gender: Gender.MASCULINE,
     categories: [Category.PROFESSION],
+    fixedDecoys: ['арест'],
   },
   {
     native: 'Минск',
@@ -91,11 +92,13 @@ export const lesson00Part02Words: Word[] = [
     stressIndex: 3,
     gender: Gender.MASCULINE,
     categories: [Category.PROFESSION, Category.AIR_TRAVEL],
+    fixedDecoys: ['пирог'],
   },
   {
     native: 'литр',
     gender: Gender.MASCULINE,
     categories: [Category.UNITS_OF_MEASUREMENT],
+    fixedDecoys: ['литература'],
   },
   {
     native: 'шар',
@@ -198,6 +201,7 @@ export const lesson00Part02Words: Word[] = [
     native: 'нож',
     gender: Gender.MASCULINE,
     categories: [Category.CUTLERY],
+    fixedDecoys: ['нос'],
   },
   {
     native: 'год',
@@ -220,6 +224,7 @@ export const lesson00Part02Words: Word[] = [
     stressIndex: 3,
     gender: Gender.MASCULINE,
     categories: [Category.FOOD],
+    fixedDecoys: ['пилот'],
   },
   {
     native: 'друг',

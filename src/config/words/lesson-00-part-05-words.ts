@@ -39,6 +39,7 @@ export const lesson00Part05Words: Word[] = [
     stressIndex: 1,
     gender: Gender.MASCULINE,
     categories: [Category.CITIES],
+    fixedDecoys: ['дорога'],
   },
   {
     native: 'Виктор',
@@ -51,12 +52,14 @@ export const lesson00Part05Words: Word[] = [
     stressIndex: 1,
     gender: Gender.MASCULINE,
     categories: [Category.PROFESSION],
+    fixedDecoys: ['работа'],
   },
   {
     native: 'слово',
     stressIndex: 2,
     gender: Gender.NEUTER,
-    categories: [Category.WRITING],
+    categories: [Category.WRITING, Category.STUDYING],
+    fixedDecoys: ['словарь'],
   },
   {
     native: 'молоко',
@@ -92,12 +95,14 @@ export const lesson00Part05Words: Word[] = [
     stressIndex: 3,
     gender: Gender.FEMININE,
     categories: [Category.TRANSPORTATION],
+    fixedDecoys: ['город'],
   },
   {
     native: 'работа',
     stressIndex: 3,
     gender: Gender.FEMININE,
     categories: [Category.PROFESSION],
+    fixedDecoys: ['робот'],
   },
   {
     native: 'собака',
@@ -116,6 +121,7 @@ export const lesson00Part05Words: Word[] = [
     stressIndex: 4,
     gender: Gender.NEUTER,
     categories: [Category.LOCATIONS, Category.TRANSPORTATION],
+    fixedDecoys: ['метр'],
   },
   {
     native: 'сестра',
@@ -127,7 +133,7 @@ export const lesson00Part05Words: Word[] = [
     native: 'номер',
     stressIndex: 1,
     gender: Gender.MASCULINE,
-    categories: [Category.NUMBERS],
+    categories: [Category.CONCEPTS],
   },
   WORD_EIGHT,
   {

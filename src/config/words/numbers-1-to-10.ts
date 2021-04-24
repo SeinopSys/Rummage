@@ -10,6 +10,7 @@ export const WORD_ONE: Word = {
 export const WORD_TWO: Word = {
   native: 'два',
   categories: [Category.NUMBERS],
+  fixedDecoys: ['двор'],
 };
 
 export const WORD_THREE: Word = {
@@ -36,24 +37,28 @@ export const WORD_SIX: Word = {
 export const WORD_SEVEN: Word = {
   native: 'семь',
   categories: [Category.NUMBERS],
+  fixedDecoys: ['восемь'],
 };
 
 export const WORD_EIGHT: Word = {
   native: 'восемь',
   stressIndex: 1,
   categories: [Category.NUMBERS],
+  fixedDecoys: ['семь'],
 };
 
 export const WORD_NINE: Word = {
   native: 'девять',
   stressIndex: 1,
   categories: [Category.NUMBERS],
+  fixedDecoys: ['десять'],
 };
 
 export const WORD_TEN: Word = {
   native: 'десять',
   stressIndex: 1,
   categories: [Category.NUMBERS],
+  fixedDecoys: ['девять'],
 };
 
 export const numbers1To10: Word[] = [

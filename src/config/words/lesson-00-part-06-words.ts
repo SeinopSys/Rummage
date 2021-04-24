@@ -16,12 +16,14 @@ export const lesson00Part06Words: Word[] = [
     native: 'двор',
     gender: Gender.MASCULINE,
     categories: [Category.LOCATIONS],
+    fixedDecoys: ['два'],
   },
   {
     native: 'капуста',
     stressIndex: 3,
     gender: Gender.FEMININE,
     categories: [Category.VEGETABLES],
+    fixedDecoys: ['щи'],
   },
   {
     native: 'ведро',
@@ -40,6 +42,7 @@ export const lesson00Part06Words: Word[] = [
     stressIndex: 5,
     gender: Gender.MASCULINE,
     categories: [Category.ANIMALS],
+    fixedDecoys: ['ворона'],
   },
   {
     native: 'бык',
@@ -117,6 +120,7 @@ export const lesson00Part06Words: Word[] = [
   {
     native: 'печь',
     categories: [Category.ACTIVITIES],
+    fixedDecoys: ['Печ'],
   },
   {
     native: 'пушка',
@@ -182,6 +186,7 @@ export const lesson00Part06Words: Word[] = [
     stressIndex: 5,
     gender: Gender.MASCULINE,
     categories: [Category.OBJECTS],
+    fixedDecoys: ['дочь'],
   },
   {
     native: 'космос',
@@ -248,6 +253,7 @@ export const lesson00Part06Words: Word[] = [
     stressIndex: 1,
     gender: Gender.MASCULINE,
     categories: [Category.BEVERAGES],
+    fixedDecoys: ['кафе'],
   },
   {
     native: 'спагетти',

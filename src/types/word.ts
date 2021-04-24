@@ -21,6 +21,10 @@ interface WordCommon {
    * `true` indicates swear words, optional since `false` is assumed by default
    */
   nonNormative?: boolean;
+  /**
+   * Russian words in native form that are easy to confuse this word with
+   */
+  fixedDecoys?: string[];
 }
 
 interface Noun extends WordCommon {

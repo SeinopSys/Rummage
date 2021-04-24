@@ -41,24 +41,28 @@ export const WORD_SEVENTEEN: Word = {
   native: 'семнадцать',
   stressIndex: 4,
   categories: [Category.NUMBERS],
+  fixedDecoys: ['восемнадцать'],
 };
 
 export const WORD_EIGHTEEN: Word = {
   native: 'восемнадцать',
   stressIndex: 6,
   categories: [Category.NUMBERS],
+  fixedDecoys: ['семнадцать'],
 };
 
 export const WORD_NINETEEN: Word = {
   native: 'девятнадцать',
   stressIndex: 6,
   categories: [Category.NUMBERS],
+  fixedDecoys: ['двадцать'],
 };
 
 export const WORD_TWENTY: Word = {
   native: 'двадцать',
   stressIndex: 2,
   categories: [Category.NUMBERS],
+  fixedDecoys: ['девятнадцать'],
 };
 
 export const numbers11To20: Word[] = [
