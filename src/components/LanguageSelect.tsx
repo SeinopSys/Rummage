@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import toPairs from 'lodash/toPairs';
 import styles from 'modules/LanguageSelector.module.scss';
 import { useTranslation } from 'next-i18next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useCallback, useMemo, VFC } from 'react';
@@ -46,7 +47,9 @@ export const LanguageSelect: VFC<{ className?: string }> = ({ className }) => {
         {toPairs(LANGUAGES).map(([key, value]) => (
           <Link key={key} href={router.asPath} locale={key} passHref>
             <DropdownItem tag="a" {...getCurrentItemProps(key)}>
-              <img className={styles.languageFlag} src={`/flags/${key}.svg`} alt="" />
+              <span className={styles.languageFlag}>
+                <Image src={`/flags/${key}.svg`} alt="" width={640} height={480} layout="responsive" />
+              </span>
               <span>{value.nativeName}</span>
             </DropdownItem>
           </Link>

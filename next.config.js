@@ -5,7 +5,4 @@ const withCamelCaseCSSModules = require('./utils/next-css-modules');
 
 module.exports = withPlugins([[withESLint], [withCamelCaseCSSModules]], {
   i18n,
-  future: {
-    webpack5: true,
-  },
 });

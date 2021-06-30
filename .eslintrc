@@ -5,6 +5,8 @@
     "es6": true
   },
   "extends": [
+    "next",
+    "next/core-web-vitals",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "airbnb",
@@ -26,7 +28,7 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint", "react", "import-newlines"],
+  "plugins": ["@typescript-eslint", "import-newlines"],
   "rules": {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
