@@ -8,6 +8,7 @@ export const lesson01Block01Words: Word[] = [
     stressIndex: 4,
     gender: Gender.FEMININE,
     categories: [Category.FAMILY],
+    fixedDecoys: ['семь'],
   },
   {
     native: 'бабушка',

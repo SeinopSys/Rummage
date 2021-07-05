@@ -96,6 +96,7 @@ export const lesson00Part03Words: Word[] = [
   {
     native: 'шест',
     gender: Gender.MASCULINE,
+    fixedDecoys: ['шесть'],
   },
   {
     native: 'есть',

@@ -44,12 +44,13 @@ export const WORD_SIX: Word = {
   categories: [Category.NUMBERS],
   number: 6,
   place: 1,
+  fixedDecoys: ['шест'],
 };
 
 export const WORD_SEVEN: Word = {
   native: 'семь',
   categories: [Category.NUMBERS],
-  fixedDecoys: ['восемь'],
+  fixedDecoys: ['восемь', 'семья'],
   number: 7,
   place: 1,
 };
