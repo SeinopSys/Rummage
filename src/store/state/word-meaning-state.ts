@@ -1,11 +1,11 @@
 import { GameState } from 'src/types/game-state';
-import { Word } from 'src/types/word';
+import { TranslatedWords, Word } from 'src/types/word';
 
 export interface WordMeaningState {
   state: GameState;
   scrambledWords?: Word[];
   wordIndex: number;
-  decoyMeanings?: string[];
+  decoyMeanings?: TranslatedWords[];
   streak: number;
 }
 

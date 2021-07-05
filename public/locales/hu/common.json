@@ -2,7 +2,7 @@
   "changeLanguage": "Nyelv változtatás",
   "current": "Jelenlegi",
   "description": "Fejleszd az orosz szókincsed",
-  "openSource": "Ez a weboldal <1>nyílt forráskódú szoftver</1> és a <3>Font Awesome Free</3> felhasználásával készült",
+  "openSource": "Ez a weboldal <1>nyílt forráskódú szoftver</1>, és a <3>Font Awesome Free</3> felhasználásával készült",
   "viewSource": "Forráskód megtekintése",
   "wordCount": "{{count}} szó",
   "showGender": "game:showGender"

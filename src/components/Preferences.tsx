@@ -12,7 +12,7 @@ export interface PreferencesProps {
 }
 
 export const Preferences: VFC<PreferencesProps> = ({ stress, setStress, cursive, setCursive, gender, setGender }) => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
   const handleCursiveChange: ChangeEventHandler<HTMLInputElement> = useCallback(
     (e) => {
       setCursive(e.target.checked);

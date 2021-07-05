@@ -114,6 +114,20 @@ export const lesson00Part01Words: Word[] = [
     categories: [Category.PERSONAL_PRONOUN],
     fixedDecoys: ['она', 'оно'],
   },
+  {
+    native: 'она',
+    gender: Gender.FEMININE,
+    stressIndex: 2,
+    categories: [Category.PERSONAL_PRONOUN],
+    fixedDecoys: ['он', 'оно'],
+  },
+  {
+    native: 'оно',
+    gender: Gender.NEUTER,
+    stressIndex: 2,
+    categories: [Category.PERSONAL_PRONOUN],
+    fixedDecoys: ['он', 'она'],
+  },
   WORD_TWO,
   {
     native: 'мак',

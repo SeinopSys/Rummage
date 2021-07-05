@@ -1,6 +1,6 @@
 import { partition, sampleSize, shuffle } from 'lodash';
 import { WordMeaningState } from 'src/store/state/word-meaning-state';
-import { Word } from 'src/types/word';
+import { TranslatedWords, Word } from 'src/types/word';
 
 const mapToNative = (words: Word[]) => words.map((word) => word.native);
 
@@ -33,7 +33,7 @@ const tryReduceUntilPortion = <T>(array: T[], minimumCount: number, divisor = 5)
  * @param count Maximum number of items to return
  * @returns `count` number of either `potentialDecoys` verbatim, or a filtered version of it based on `word`
  */
-const reduceDecoyList = (word: Word, potentialDecoys: Word[], count: number): string[] => {
+const reduceDecoyList = (word: Word, potentialDecoys: Word[], count: number): TranslatedWords[] => {
   let fixedDecoys: Word[] = [];
   let remainingDecoys: Word[] = potentialDecoys;
 
@@ -56,8 +56,8 @@ const reduceDecoyList = (word: Word, potentialDecoys: Word[], count: number): st
   const filterSteps: (() => boolean | void)[] = [
     () => {
       // Return only words with unknown or matching gender if gender is known
-      if (typeof word.gender !== 'undefined') {
-        remainingDecoys = remainingDecoys.filter((decoy) => typeof decoy.gender === 'undefined' || decoy.gender === word.gender);
+      if ('gender' in word && typeof word.gender !== 'undefined') {
+        remainingDecoys = remainingDecoys.filter((decoy) => !('gender' in decoy) || decoy.gender === word.gender);
       }
     },
     () => {
@@ -109,7 +109,7 @@ const reduceDecoyList = (word: Word, potentialDecoys: Word[], count: number): st
   return mapToNative([...fixedDecoys, ...sampleSize(remainingDecoys, count - fixedDecoys.length)]);
 };
 
-export const selectDecoyMeanings = (state: WordMeaningState): string[] | undefined => {
+export const selectDecoyMeanings = (state: WordMeaningState): TranslatedWords[] | undefined => {
   if (!state.scrambledWords) return undefined;
 
   const newWord = state.scrambledWords[state.wordIndex];

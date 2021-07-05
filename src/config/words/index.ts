@@ -8,6 +8,8 @@ import { lesson00Part06Words } from 'src/config/words/lesson-00-part-06-words';
 import { lesson01Block01Words } from 'src/config/words/lesson-01-block-01-words';
 import { lesson01Block02Words } from 'src/config/words/lesson-01-block-02-words';
 import { numbers11To20 } from 'src/config/words/numbers-11-to-20';
+import { numbers200To1000 } from 'src/config/words/numbers-200-to-1000';
+import { numbers30To100 } from 'src/config/words/numbers-30-to-100';
 
 export const lesson00WordsArray = [
   ...lesson00Part01Words,
@@ -18,4 +20,11 @@ export const lesson00WordsArray = [
   ...lesson00Part06Words,
 ];
 export const lesson01WordsArray = [...lesson01Block01Words, ...lesson01Block02Words];
-export const allWordsArray = [...lesson00WordsArray, ...lesson01WordsArray, ...extraWords, ...numbers11To20];
+export const allWordsArray = [
+  ...lesson00WordsArray,
+  ...lesson01WordsArray,
+  ...extraWords,
+  ...numbers11To20,
+  ...numbers30To100,
+  ...numbers200To1000,
+];

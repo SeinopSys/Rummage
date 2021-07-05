@@ -5,39 +5,53 @@ export const WORD_ONE: Word = {
   native: 'один',
   stressIndex: 2,
   categories: [Category.NUMBERS],
+  number: 1,
+  place: 1,
 };
 
 export const WORD_TWO: Word = {
   native: 'два',
   categories: [Category.NUMBERS],
   fixedDecoys: ['двор'],
+  number: 2,
+  place: 1,
 };
 
 export const WORD_THREE: Word = {
   native: 'три',
   categories: [Category.NUMBERS],
+  number: 3,
+  place: 1,
 };
 
 export const WORD_FOUR: Word = {
   native: 'четыре',
   stressIndex: 3,
   categories: [Category.NUMBERS],
+  number: 4,
+  place: 1,
 };
 
 export const WORD_FIVE: Word = {
   native: 'пять',
   categories: [Category.NUMBERS],
+  number: 5,
+  place: 1,
 };
 
 export const WORD_SIX: Word = {
   native: 'шесть',
   categories: [Category.NUMBERS],
+  number: 6,
+  place: 1,
 };
 
 export const WORD_SEVEN: Word = {
   native: 'семь',
   categories: [Category.NUMBERS],
   fixedDecoys: ['восемь'],
+  number: 7,
+  place: 1,
 };
 
 export const WORD_EIGHT: Word = {
@@ -45,6 +59,8 @@ export const WORD_EIGHT: Word = {
   stressIndex: 1,
   categories: [Category.NUMBERS],
   fixedDecoys: ['семь'],
+  number: 8,
+  place: 1,
 };
 
 export const WORD_NINE: Word = {
@@ -52,6 +68,8 @@ export const WORD_NINE: Word = {
   stressIndex: 1,
   categories: [Category.NUMBERS],
   fixedDecoys: ['десять'],
+  number: 9,
+  place: 1,
 };
 
 export const WORD_TEN: Word = {
@@ -59,6 +77,8 @@ export const WORD_TEN: Word = {
   stressIndex: 1,
   categories: [Category.NUMBERS],
   fixedDecoys: ['девять'],
+  number: 10,
+  place: 10,
 };
 
 export const numbers1To10: Word[] = [

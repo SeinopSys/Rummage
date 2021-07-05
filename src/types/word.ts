@@ -1,13 +1,16 @@
+import { CustomTypeOptions } from 'react-i18next';
 import { Category } from 'src/types/category';
 import { Gender } from 'src/types/gender';
 import { PersonalPronoun } from 'src/types/personal-pronoun';
 import { Tense } from 'src/types/tense';
 
+export type TranslatedWords = keyof CustomTypeOptions['resources']['words'];
+
 interface WordCommon {
   /**
    * The word spelled out using russian characters, used as a key for translations
    */
-  native: string;
+  native: TranslatedWords;
   /**
    * 0-based index of the stressed character, optional for
    * single-syllable words or words containing ё (jo)
@@ -24,7 +27,15 @@ interface WordCommon {
   /**
    * Russian words in native form that are easy to confuse this word with
    */
-  fixedDecoys?: string[];
+  fixedDecoys?: TranslatedWords[];
+}
+
+interface NumeralName extends WordCommon {
+  number: number;
+  /**
+   * For "round" numbers, marks the place of the number (for future re-use)
+   */
+  place?: 1 | 10 | 100 | 1000;
 }
 
 interface Noun extends WordCommon {
@@ -41,4 +52,4 @@ interface Verb extends WordCommon {
   personalPronoun: PersonalPronoun;
 }
 
-export type Word = Noun | Verb;
+export type Word = Noun | Verb | NumeralName;

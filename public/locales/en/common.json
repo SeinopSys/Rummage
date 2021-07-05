@@ -2,7 +2,7 @@
   "changeLanguage": "Change language",
   "current": "Current",
   "description": "Improve your Russian vocabulary",
-  "openSource": "This website is <1>open-source software</1> built using <3>Font Awesome Free</3>",
+  "openSource": "This website is <1>open-source software</1>, built using <3>Font Awesome Free</3>",
   "viewSource": "View source code",
   "wordCount": "{{count}} word",
   "wordCount_plural": "{{count}} words",

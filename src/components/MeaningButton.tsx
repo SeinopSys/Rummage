@@ -1,11 +1,12 @@
 import { TFunction } from 'i18next';
 import { useCallback, useMemo, VFC } from 'react';
 import { Badge, Button } from 'reactstrap';
+import { TranslatedWords } from 'src/types/word';
 
 interface PropTypes {
   t: TFunction;
-  onGuess: (meaningKey: string) => void;
-  meaningKey: string;
+  onGuess: (meaningKey: TranslatedWords) => void;
+  meaningKey: TranslatedWords;
   nth: number;
   correct?: boolean;
   lastSelected?: boolean;

@@ -14,7 +14,7 @@ import { AppDispatch } from 'src/store';
 import { RootState } from 'src/store/rootReducer';
 import { wordMeaningActions } from 'src/store/slices';
 import { GameState } from 'src/types/game-state';
-import { Word } from 'src/types/word';
+import { TranslatedWords, Word } from 'src/types/word';
 import { normalizeMeanings } from 'src/utils/normalize-meanings';
 
 export const WordMeaningGame: VFC = () => {
@@ -26,7 +26,7 @@ export const WordMeaningGame: VFC = () => {
   const word: Word | undefined = scrambledWords && scrambledWords[wordIndex];
   const isWinner: boolean = streak === allWordsArray.length;
   const winStatusColor = isWinner ? 'success' : 'danger';
-  const allMeanings = useMemo<string[]>(() => {
+  const allMeanings = useMemo<TranslatedWords[]>(() => {
     if (!word || !decoyMeanings) return [];
 
     return shuffle([...decoyMeanings, word.native]);
@@ -38,7 +38,7 @@ export const WordMeaningGame: VFC = () => {
     });
   }, [dispatch]);
   const handleGuess = useCallback(
-    (meaningKey: string) => {
+    (meaningKey: TranslatedWords) => {
       if (!word) return;
       batch(() => {
         setLastSelectedMeaning(meaningKey);
@@ -102,7 +102,7 @@ export const WordMeaningGame: VFC = () => {
                 {...word}
                 cursive={preferences.cursive}
                 stress={preferences.stress}
-                gender={preferences.gender ? word.gender : undefined}
+                gender={preferences.gender && 'gender' in word ? word.gender : undefined}
               />
             </p>
             {allMeanings.length > 0 && (
