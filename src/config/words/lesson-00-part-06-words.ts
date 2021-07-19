@@ -112,12 +112,6 @@ export const lesson00Part06Words: Word[] = [
     gender: Gender.MASCULINE,
   },
   {
-    native: 'среда',
-    stressIndex: 4,
-    gender: Gender.FEMININE,
-    categories: [Category.WEEKDAYS],
-  },
-  {
     native: 'печь',
     categories: [Category.ACTIVITIES],
     fixedDecoys: ['Печ'],

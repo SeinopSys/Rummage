@@ -1,3 +1,4 @@
+import { daysOfTheWeek } from 'src/config/words/days-of-the-week';
 import { extraWords } from 'src/config/words/extra-words';
 import { lesson00Part01Words } from 'src/config/words/lesson-00-part-01-words';
 import { lesson00Part02Words } from 'src/config/words/lesson-00-part-02-words';
@@ -24,6 +25,7 @@ export const allWordsArray = [
   ...lesson00WordsArray,
   ...lesson01WordsArray,
   ...extraWords,
+  ...daysOfTheWeek,
   ...numbers11To20,
   ...numbers30To100,
   ...numbers200To1000,
